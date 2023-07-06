@@ -1,5 +1,6 @@
 from typing import Tuple, List, Any
 
+
 def zoom_array(lst: Tuple, factor: int = 2) -> Tuple[Any]:
     zoomed_in: Tuple[Any] = [
         item for item in lst

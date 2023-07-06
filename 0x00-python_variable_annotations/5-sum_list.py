@@ -14,7 +14,6 @@ def sum_list(input_list: list[float]) -> float:
         float: value of sum_list
     """
     sum: float = 0
-
     for i in input_list:
         sum += i
     return sum
