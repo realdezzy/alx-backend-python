@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-
+Async comprehension
 """
 import asyncio
 from typing import List
@@ -14,8 +14,6 @@ async def async_comprehension() -> List[float]:
     Returns:
         List[float]: list of float values
     """
-    results = []
-    async for i in async_generator():
-        results.append(i)
+    results = [i async for i in async_generator()]
 
     return results
